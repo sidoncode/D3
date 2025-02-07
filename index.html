@@ -1,8 +1,130 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddharth Sharma | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0073b1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Siddharth Sharma</h1>
+        <p>Senior Consultant, Corporate Trainer & Microsoft Certified Trainer (MCT)</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a Senior Consultant and Corporate Trainer with over 10 years of experience, specializing in DevOps, Cloud technologies (AWS, Azure, GCP), and programming languages like Java, Golang, and Python. I am passionate about delivering high-quality training sessions and helping organizations streamline their processes through effective DevOps practices.</p>
+        </section>
 
-  <body>
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>IBM Singapore</li>
+                <li>Deloitte</li>
+                <li>Apar Technologies</li>
+                <li>Microsoft</li>
+                <li>JPMC</li>
+                <li>Siemens</li>
+                <li>ConcertAI</li>
+                <li>CITI Bank</li>
+                <li>Xebia</li>
+                <li>SprintZeal UK</li>
+                <li>Global Knowledge UK & US</li>
+            </ul>
+        </section>
 
-    <h1> Hello</h1>
-  </body>
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <p>Microsoft Certified Trainer (MCT) with expertise in various cloud and DevOps tools such as Docker, Kubernetes, Jenkins, AWS, Azure, and GCP.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Connect with me on LinkedIn for collaborations, training sessions, or consultations.</p>
+            <a href="https://www.linkedin.com/in/siddharth-sharma-mct/" class="btn" target="_blank">Visit My LinkedIn</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Siddharth Sharma | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
